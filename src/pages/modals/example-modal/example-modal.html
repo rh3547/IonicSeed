@@ -1,0 +1,41 @@
+<ion-header class="">
+  <ion-row>
+    <!-- Back Icon -->
+    <ion-row class="row-back-icon">
+      <ion-icon name="close" class="pointer fg-dark opacity-50" (click)="backClicked()"></ion-icon>
+    </ion-row>
+    <!-- End Back Icon -->
+
+    <!-- Title -->
+    <ion-row class="row-title">
+      <h1 class="fg-grey text-center no-padding">Ionic Seed</h1>
+      <h3 class="text-center no-padding">Enter Your Name</h3>
+    </ion-row>
+    <!-- End Title -->
+  </ion-row>
+</ion-header>
+
+<ion-content padding class="bg-white">
+
+  <!-- Form -->
+  <ion-row class="row-form">
+    <ion-col>
+      <form #nameForm="ngForm">
+        <div class="io-input-group">
+          <label class="io-label primary">FULL NAME</label>
+          <input type="text" name="name" [(ngModel)]="model">
+        </div>
+      </form>
+    </ion-col>
+  </ion-row>
+  <!-- End Form -->
+
+</ion-content>
+
+<!-- Button Footer -->
+<ion-footer class="button-footer">
+  <ion-row>
+    <button class="btn-stacked center" (click)="doneClicked()">Done</button>
+  </ion-row>
+</ion-footer>
+<!-- End Button Footer -->

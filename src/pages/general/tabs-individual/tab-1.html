@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>Tab 1</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Tab 1 Content</h1>
+  <p>Click button to call a function in the tabs parent page.</p>
+  <button class="io-btn btn-stacked center" (click)="callParentFunction()">Click Me</button>
+</ion-content>

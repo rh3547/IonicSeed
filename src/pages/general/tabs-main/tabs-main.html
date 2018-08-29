@@ -1,0 +1,30 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Ionic Seed</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item menuToggle (click)="tabFunction()">
+        <ion-icon name="md-list" class="opacity-50"></ion-icon>
+        Option 1
+      </button>
+      <button ion-item menuToggle>
+        <ion-icon name="ios-cog" class="opacity-50"></ion-icon>
+        Option 2
+      </button>
+      <button ion-item menuToggle (click)="logout()">
+        <ion-icon name="ios-exit" class="opacity-50"></ion-icon>
+        Logout
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-tabs selectedIndex="0" #content>
+  <ion-tab [root]="tab1" tabTitle="Tab 1" tabIcon="md-list" [rootParams]="tabParams"></ion-tab>
+  <ion-tab [root]="tab2" tabTitle="Tab 2" tabIcon="md-checkmark-circle" [rootParams]="tabParams"></ion-tab>
+  <ion-tab [root]="tab3" tabTitle="Tab 3" tabIcon="md-cog" [rootParams]="tabParams"></ion-tab>
+</ion-tabs>
+

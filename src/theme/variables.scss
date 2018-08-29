@@ -1,0 +1,194 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Asset Paths
+$asset-path: "/assets";
+$image-path: "/assets/imgs";
+$font-path: "/assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+
+// More Vibrant Colors
+$colors: (
+  primary:      #4b5eb2,
+  secondary:    #8c61b2,
+  accent:       #d65b88,
+  light:        #F5F5F5,
+  dark:         #424242,
+  grey:       #8F9090,
+  valid:        #32DB64,
+  invalid:      #F53D3D,
+  white:      #FFFFFF,
+  black:      #000000,
+  accept:       #5dbe61,
+  deny:         #ed5e68
+);
+
+
+
+
+// Fonts
+// --------------------------------------------------
+@font-face {
+  font-family: 'Fredoka';
+  src: url('#{$font-path}/FredokaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Baloo';
+  src: url('#{$font-path}/BalooBhaina-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('#{$font-path}/Overpass-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OverpassBold';
+  src: url('#{$font-path}/Overpass-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Catamaran';
+  src: url('#{$font-path}/Catamaran-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CatamaranBold';
+  src: url('#{$font-path}/Catamaran-Bold.ttf') format('truetype');
+}
+
+$font-title: (
+    family: 'Fredoka',
+    size: 40px,
+    size-ios: 46px,
+    weight: normal,
+    color: map-get($colors, primary)
+);
+
+$font-heading: (
+    family: Baloo,
+    size: 24px,
+    size-ios: 26px,
+    weight: normal,
+    color: map-get($colors, primary)
+);
+
+$font-subheading: (
+    family: Baloo,
+    size: 20px,
+    size-ios: 22px,
+    weight: normal,
+    color: map-get($colors, primary)
+);
+
+$font-bodybold: (
+    family: OverpassBold,
+    size: 14px,
+    size-ios: 16px,
+    weight: bold,
+    color: map-get($colors, dark)
+);
+
+$font-body: (
+    family: Overpass,
+    size: 14px,
+    size-ios: 16px,
+    weight: normal,
+    color: map-get($colors, dark)
+);
+
+$font-button: (
+    family: Baloo,
+    size: 28px,
+    size-ios: 30px,
+    weight: normal,
+    color: map-get($colors, light)
+);
+
+$font-button-small: (
+    family: Baloo,
+    size: 24px,
+    size-ios: 26px,
+    weight: normal,
+    color: map-get($colors, light)
+);
+
+$font-input-label: (
+    family: Baloo,
+    size: 15px,
+    size-ios: 16px,
+    weight: normal,
+    color: map-get($colors, secondary)
+);
+
+$font-input-value: (
+    family: Catamaran,
+    size: 22px,
+    size-ios: 24px,
+    weight: normal,
+    color: map-get($colors, dark)
+);
+
+
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
